@@ -1,0 +1,19 @@
+
+.Title {
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px black;
+}
+
+@media (max-width: 500px) {
+  .Title {
+    font-size: 3em;
+  }
+}

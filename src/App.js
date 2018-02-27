@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import Balls from './components/Balls/Balls';
+import Particles from './components/Particles/Particles';
+import Timeline from './components/Timeline/Timeline';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Balls/>
-      </div>
+      <MuiThemeProvider>
+        <div className="App">
+          <Particles/>
+          <Timeline/>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
