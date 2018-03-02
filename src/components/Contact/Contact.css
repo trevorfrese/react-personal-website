@@ -1,0 +1,24 @@
+.Contact {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.Info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.Text {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@media (max-width: 500px) {
+  .Text {
+    font-size: 1.5em;
+  }
+}

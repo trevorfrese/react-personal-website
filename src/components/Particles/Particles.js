@@ -27,7 +27,7 @@ const particles = (props) => (
       width="100vw"
       height="100vh">
     </Particles>
-    <Title>SOFTWARE ENGINEER</Title>
+    <Title/>
 
 
   </div>
