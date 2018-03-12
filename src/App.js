@@ -7,13 +7,11 @@ import Contact from './components/Contact/Contact';
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
-        <div className="App">
-          <Particles/>
-          <Timeline/>
-          <Contact/>
-        </div>
-      </MuiThemeProvider>
+      <div className="App">
+        <Particles/>
+        <Timeline/>
+        <Contact/>
+      </div>
     );
   }
 }
