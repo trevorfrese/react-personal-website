@@ -17,7 +17,7 @@ const project = (props) => (
       </div>
     </div>
     <div className={classes.WorkDescription + ' ' + classes.Card}>
-      <div className={classes.Padded}>
+      <div className={classes.TitleBlock}>
         <div className={classes.Title}>
           <Link url={props.companyUrl} linkText={props.company}/>
         </div>
@@ -26,10 +26,9 @@ const project = (props) => (
         </div>
       </div>
       {/* <CardTitle title={props.company} subtitle={props.position + ", " + props.location} /> */}
-      <div className={classes.Padded}>
-        <div>
-          {props.description}
-        </div>
+      <div className={classes.TextBlock}>
+        <p><strong>What: </strong><br/>{props.what}</p>
+        <p><strong>I Learned: </strong><br/>{props.learned}</p>
       </div>
     </div>
   </div>

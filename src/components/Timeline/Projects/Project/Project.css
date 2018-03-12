@@ -52,8 +52,12 @@
   opacity: 0.9;
 }
 
-.Padded {
+.TitleBlock {
   padding: 10px 10px 0px 10px;
+}
+
+.TextBlock {
+  padding: 5px 10px 10px 10px;
 }
 
 .Title {
@@ -63,11 +67,10 @@
 
 .Subtitle {
   font-size: 1em;
-  margin-bottom: 5px;
   color: #16B75E;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 690px) {
   .Project {
     display: flex;
     justify-content: space-between;
@@ -93,4 +96,7 @@
     height: auto;
   }
 
+  .TextBlock {
+    padding: 10px 10px 10px 10px;
+  }
 }
