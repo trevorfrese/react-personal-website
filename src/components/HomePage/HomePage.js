@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import mainImage from '../../assets/images/just-face.jpg';
 
 import classes from './HomePage.css';
@@ -14,13 +16,19 @@ const homePage = (props) => (
     </div>
     <div className={classes.Controls}>
       <div className={classes.Control + ' ' + classes.ButtonContainer}>
-        <button className={classes.Button + ' ' + classes.Blue}>WORK</button>
+        <Link to="/work">
+          <button className={classes.Button + ' ' + classes.Blue}>WORK</button>
+        </Link>
       </div>
       <div className={classes.Control + ' ' +  classes.ButtonContainer}>
-        <button className={classes.Button + ' ' + classes.Purple}>WHO AM I</button>
+        <Link to="/my_story">
+          <button className={classes.Button + ' ' + classes.Purple}>WHO AM I</button>
+        </Link>
       </div>
       <div className={classes.Control + ' ' + classes.ButtonContainer}>
+        <Link to="/role_models">
           <button className={classes.Button + ' ' + classes.Orange}>ROLE MODELS</button>
+        </Link>
       </div>
     </div>
 
