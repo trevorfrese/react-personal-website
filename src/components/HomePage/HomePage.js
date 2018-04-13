@@ -22,12 +22,12 @@ const homePage = (props) => (
       </div>
       <div className={classes.Control + ' ' +  classes.ButtonContainer}>
         <Link to="/my_story">
-          <button className={classes.Button + ' ' + classes.Purple}>WHO AM I</button>
+          <button className={classes.Button + ' ' + classes.Purple}>WHO I AM</button>
         </Link>
       </div>
       <div className={classes.Control + ' ' + classes.ButtonContainer}>
-        <Link to="/role_models">
-          <button className={classes.Button + ' ' + classes.Orange}>ROLE MODELS</button>
+        <Link to="/mentors">
+          <button className={classes.Button + ' ' + classes.Orange}>MENTORS</button>
         </Link>
       </div>
     </div>

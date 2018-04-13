@@ -1,0 +1,40 @@
+.Work {
+    width: 100vw;
+    height: 100vw;
+    background-color: #EE6055;
+    display: flex;
+    flex-direction: column;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+.Projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+.LogoContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.Logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Description {
+  font-size: 2em;
+  color: white;
+}

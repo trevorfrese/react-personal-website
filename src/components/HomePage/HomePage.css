@@ -67,7 +67,7 @@
 }
 
 .Button {
-  background-color: transparent;
+  background-color: #46237A;
   color: white;
   outline: none;
   cursor: pointer;
@@ -77,7 +77,13 @@
   font-weight: bold;
 }
 
-.Blue {
+@media (max-width: 330px) {
+  .Button {
+    font-size: .8em;
+  }
+}
+
+/* .Blue {
   background-color: #3d8ff5;
 }
 
@@ -87,4 +93,4 @@
 
 .Orange {
   background-color: #F0A202;
-}
+} */
