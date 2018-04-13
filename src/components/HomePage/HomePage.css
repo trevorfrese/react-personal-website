@@ -1,0 +1,89 @@
+.HomePage {
+  background-color: #EE6055;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.Controls {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+.MainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.Greeting {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.NavItem {
+  margin: auto;
+  display: block;
+}
+
+.Control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButtonContainer {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.Button {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.Blue {
+  background-color: #3d8ff5;
+}
+
+.Purple {
+  background-color: #46237A;
+}
+
+.Orange {
+  background-color: #F0A202;
+}
