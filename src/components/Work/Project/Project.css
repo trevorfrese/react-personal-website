@@ -1,0 +1,23 @@
+.Project {
+
+}
+
+.Tagline {
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+.Company {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.Stack {
+  /* text-align: center; */
+}
