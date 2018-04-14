@@ -4,6 +4,7 @@ import ben from '../../assets/images/ben.jpg';
 import richard from '../../assets/images/richard.jpg';
 import elon from '../../assets/images/elon.png';
 import tim from '../../assets/images/tim.png';
+import evelyn from '../../assets/images/evelyn.jpg';
 import claudia from '../../assets/images/claudia.jpg';
 import celeste from '../../assets/images/celeste.jpeg';
 import kevin from '../../assets/images/kevin.jpg';
@@ -52,6 +53,15 @@ class mentors extends Component {
         interesting and funny is something to aspire to.`
       },
       {
+        image: evelyn,
+        name: 'Evelyn Reder',
+        url: 'http://www.gss.ucsb.edu/people/evelyn-reder',
+        job: 'UCSB German Lecturer',
+        bio: `I took German 1 with Evelyn, and then proceeded to take all of her classes, minored in German,
+        and studied abroad in Berlin because of her. She is
+        the absolute best teacher and makes learning fun and exciting.`
+      },
+      {
         image: claudia,
         name: 'Claudia Tyler',
         url: 'http://www.es.ucsb.edu/people/claudia-tyler',
@@ -92,7 +102,7 @@ class mentors extends Component {
     mentors = this.state.mentors.map(mentor => {
       return (
         <Mentor
-          key={mentor.company}
+          key={mentor.name}
           image={mentor.image}
           name={mentor.name}
           url={mentor.url}
