@@ -1,0 +1,26 @@
+.BackButton {
+  width: auto;
+  height: 50px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000;
+  background-color: #46237A;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+
+  outline: none;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 500px) {
+  .BackButton {
+    top: 15px;
+    left: 15px;
+  }
+}

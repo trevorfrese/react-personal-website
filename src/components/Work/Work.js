@@ -14,13 +14,38 @@ import Modal from '../UI/Modal/Modal';
 
 import Project from './Project/Project';
 
+import BackButton from '../UI/BackButton/BackButton';
 
 import classes from './Work.css';
 
 class work extends Component {
+  constructor(props){
+    super(props);
+    this.hideButton = this.hideButton.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.hideButton);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.hideButton);
+  }
+
+  hideButton(){
+    // If they ever scroll up, they're maybe thinking of going back to another page
+    if (window.scrollY < this.prev) {
+      this.setState({ hideBackButton: false })
+    } else {
+      this.setState({ hideBackButton: true})
+    }
+    this.prev = window.scrollY;
+  }
+
   state = {
     modal: '',
     showModal: false,
+    hideBackButton: true,
     jobs: [
       {
         image: earny,
@@ -135,6 +160,11 @@ class work extends Component {
 
       )
     })
+
+    let back = '';
+    if (!this.state.hideBackButton) {
+      back = <BackButton/>
+    }
     return (
       <Aux>
         <Modal
@@ -142,6 +172,7 @@ class work extends Component {
         modalClosed={this.closeModal}>
           {this.state.modal}
         </Modal>
+        {back}
         <div className={classes.Work}>
           <p className={classes.Description}>Here are some projects I'm proud of.</p>
           <div className={classes.Projects}>

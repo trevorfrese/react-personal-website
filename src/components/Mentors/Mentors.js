@@ -13,9 +13,35 @@ import anshul from '../../assets/images/anshul.jpg';
 import classes from './Mentors.css';
 
 import Mentor from './Mentor/Mentor';
+import BackButton from '../UI/BackButton/BackButton';
 
 class mentors extends Component {
+
+  constructor(props){
+    super(props);
+    this.hideButton = this.hideButton.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.hideButton);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.hideButton);
+  }
+
+  hideButton(){
+    // If they ever scroll up, they're maybe thinking of going back to another page
+    if (window.scrollY < this.prev) {
+      this.setState({ hideBackButton: false })
+    } else {
+      this.setState({ hideBackButton: true})
+    }
+    this.prev = window.scrollY;
+  }
+
   state = {
+    hideBackButton: true,
     mentors: [
       {
         image: ben,
@@ -96,7 +122,6 @@ class mentors extends Component {
     ]
   }
 
-
   render() {
     let mentors = null
     mentors = this.state.mentors.map(mentor => {
@@ -112,8 +137,14 @@ class mentors extends Component {
       )
     })
 
+    let back = '';
+    if (!this.state.hideBackButton) {
+      back = <BackButton/>
+    }
+
     return (
       <div>
+        {back}
         <p className={classes.Description}>Here are some of my role models.</p>
         <div className={classes.Mentors}>
           {mentors}
