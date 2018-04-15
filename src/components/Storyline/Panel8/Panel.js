@@ -8,8 +8,6 @@ import classes from './Panel.css';
 const panel = (props) => (
   <div className={classes.Panel}>
     <Wrapper>
-      <p>I live in chronic pain now.</p>
-      <br/>
       <p><Background backgroundColor="white" fontColor="#46237A">Discipline</Background>&nbsp;
       and&nbsp;<Background backgroundColor="white" fontColor="#46237A">Technique</Background>&nbsp;
       are the ways I handle the pain.</p>

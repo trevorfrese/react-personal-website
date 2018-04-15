@@ -1,6 +1,5 @@
 import React from 'react';
 
-import moment from 'moment';
 
 import Wrapper from '../../UI/Layout/Wrapper/Wrapper';
 import Background from '../../UI/Text/Background/Background';
@@ -8,7 +7,7 @@ import Background from '../../UI/Text/Background/Background';
 import classes from './Panel.css';
 
 const panel = (props) => {
-  const daysSinceInjury = moment().diff(moment('05-11-2016'), 'days')
+  const daysSinceInjury = (Math.floor(( Date.parse(new Date) - Date.parse('05-11-2016') ) / 86400000)) || 703;
   return (
     <div className={classes.Panel}>
       <Wrapper>

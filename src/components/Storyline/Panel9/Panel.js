@@ -8,7 +8,7 @@ const panel = (props) => (
   <div className={classes.Panel}>
     <Wrapper>
       <p>I'm thankful for this injury.</p><br/>
-      <p>I'm more mindful, caring, and patient.</p>
+      <p>Now, I'm more mindful, caring, and patient.</p>
     </Wrapper>
   </div>
 );
