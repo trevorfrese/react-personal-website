@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from '../../UI/Layout/Link/Link';
+
 import classes from './Project.css';
 
 const project = (props) => {
@@ -7,15 +9,13 @@ const project = (props) => {
   if (props.stack) {
     stack = <div><hr/><p className={classes.Stack}>Stack: {props.stack}</p></div>
   }
+  let link = <p className={classes.Company}>{props.company}</p>
+  if (props.companyUrl) {
+    link = <p className={classes.Company}><Link url={props.companyUrl} linkText={props.company}/></p>
+  }
   return (
     <div className={classes.Project}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        className={classes.Link}
-        href={props.companyUrl}>
-        <p className={classes.Company}>{props.company}</p>
-      </a>
+      {link}
       <hr/>
       <p className={classes.Tagline}>{props.what}</p>
       <hr/>
