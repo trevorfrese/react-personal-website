@@ -33,7 +33,8 @@ class mentors extends Component {
   hideButton(){
     // If they ever scroll up, they're maybe thinking of going back to another page
     if (window.scrollY < this.prev) {
-      this.setState({ hideBackButton: false })
+      this.setState({ hideBackButton: false });
+      window.removeEventListener('scroll', this.hideButton);
     } else {
       this.setState({ hideBackButton: true})
     }

@@ -30,7 +30,7 @@ class projects extends Component {
         company: 'Echo',
         companyUrl: 'https://play.google.com/store/apps/details?id=com.ivecho.echo&hl=en',
         position: 'Co-founder & CTO',
-        what: `Echo creates communities for houses, apartments, and neighborhoods.`,
+        what: `Echo connects communities for houses, apartments, and neighborhoods.`,
         learned: `How to build extremely fast. How to build an entire codebase myself.
           How to discover a market.`
       },
@@ -83,7 +83,7 @@ class projects extends Component {
         image: botball,
         company: 'NHHS Robotics Team',
         companyUrl: 'https://www.youtube.com/watch?v=RTQDY6k-yR8',
-        position: 'Cofounder',
+        position: 'Co-founder',
         what: 'The NHHS Robotics team competes in an autonomous robotics competition.',
         learned: 'How to build a team. How to raise money. How to compete internationally. How to win.'
       },

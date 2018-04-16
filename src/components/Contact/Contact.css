@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.Canvas{
+  width: 100vw;
+  height: 100vh;
+}
+
 .Info {
   position: absolute;
   top: 50%;
