@@ -10,7 +10,7 @@ const panel = (props) => (
     <Wrapper>
       <p><Background backgroundColor="white" fontColor="#46237A">Discipline</Background>&nbsp;
       and&nbsp;<Background backgroundColor="white" fontColor="#46237A">Technique</Background>&nbsp;
-      are the ways I handle the pain.</p>
+      are the ways I handle the chronic pain.</p>
 
     </Wrapper>
   </div>

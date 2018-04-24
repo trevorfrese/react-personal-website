@@ -11,7 +11,7 @@ const panel = (props) => (
       <p>
         <Background backgroundColor="white" fontColor="#46237A">Discipline:</Background>&nbsp;
       </p>
-      <p>A constant process of trying again despite slow progress.</p>
+      <p>Constantly trying again despite slow progress.</p>
     </Wrapper>
   </div>
 );

@@ -10,6 +10,7 @@ import Panel7 from './Panel7/Panel';
 import Panel8 from './Panel8/Panel';
 import Panel9 from './Panel9/Panel';
 import Panel10 from './Panel10/Panel';
+import Panel11 from './Panel11/Panel';
 
 import BackButton from '../UI/BackButton/BackButton';
 
@@ -58,9 +59,11 @@ class storyline extends Component {
         <Panel2/>
         <Panel4/>
         {/* <Panel5/> */}
+        <Panel8/>
         <Panel6/>
         <Panel7/>
-        <Panel8/>
+
+        <Panel11/>
         <Panel9/>
         <Panel10/>
       </div>
