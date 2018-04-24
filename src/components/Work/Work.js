@@ -158,7 +158,6 @@ class work extends Component {
           key={index}>
           <img className={classes.Image} src={job.image} alt="" />
         </div>
-
       )
     })
 
