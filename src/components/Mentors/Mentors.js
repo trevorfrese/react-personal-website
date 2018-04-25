@@ -8,7 +8,6 @@ import evelyn from '../../assets/images/evelyn.jpg';
 import claudia from '../../assets/images/claudia.jpg';
 import celeste from '../../assets/images/celeste.jpeg';
 import kevin from '../../assets/images/kevin.jpg';
-import anshul from '../../assets/images/anshul.jpg';
 
 import classes from './Mentors.css';
 
@@ -111,14 +110,6 @@ class mentors extends Component {
         job: 'Software Engineer',
         bio: `Kevin is my best friend and is as hell bent on
         self improvement as me. We constantly try to challenge and inspire each other to do better.`
-      },
-      {
-        image: anshul,
-        name: 'Anshul Jain',
-        url: 'https://www.linkedin.com/in/anshul-jain-0a0b6923/',
-        job: 'Software Engineer',
-        bio: `Anshul is one of my best friends who has already sold a company at 24,
-        and has the greatest insights on life in general.`
       },
     ]
   }
