@@ -9,7 +9,7 @@ const panel = (props) => (
     <Wrapper>
       <p>These two principles guide all my actions.</p><br/>
 
-      <p>Now, I always evaluate <b>what</b> I'm doing and <b>how</b> I'm doing it.</p>
+      <p>Now, I always evaluate <b><u>what</u></b> I'm doing and <b><u>how</u></b> I'm doing it.</p>
     </Wrapper>
   </div>
 );
