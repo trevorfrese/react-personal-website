@@ -7,7 +7,7 @@ import Background from '../../UI/Text/Background/Background';
 import classes from './Panel.css';
 
 const panel = (props) => {
-  const daysSinceInjury = (Math.floor(( Date.parse(new Date()) - Date.parse('05-11-2016') ) / 86400000)) || 703;
+  const daysSinceInjury = (Math.floor(( Date.parse(new Date()) - Date.parse(new Date('2016', '04', '11')) ) / 86400000)) || 703;
   return (
     <div className={classes.Panel}>
       <Wrapper>
