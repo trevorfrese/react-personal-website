@@ -87,4 +87,8 @@
   .Button {
     padding: 10px;
   }
+  
+  .Row {
+    height: 50%;
+  }
 }
