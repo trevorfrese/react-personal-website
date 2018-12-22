@@ -8,6 +8,7 @@ import ucsb from '../../assets/images/ucsb.png';
 import sbhacks from '../../assets/images/sbhacks.png';
 import botball from '../../assets/images/botball.png';
 import iseclab from '../../assets/images/iseclab.jpg';
+import square from '../../assets/images/square.png';
 
 import Aux from '../../hoc/Aux/Aux';
 import Modal from '../UI/Modal/Modal';
@@ -48,6 +49,16 @@ class work extends Component {
     showModal: false,
     hideBackButton: true,
     jobs: [
+      {
+        image: square,
+        company: 'Square',
+        companyUrl: 'https://squareup.com',
+        position: 'Full Stack Engineer',
+        what: `Square empowers businesses`,
+        description: `Square provides businesses a suite of tools to manage Point of Sale,
+        Payroll, Inventory, Appointments, Marketing and so much more. I work on a division in
+        Square that empowers Square Sellers with a fully fledged CRM system.`
+      },
       {
         image: earny,
         company: 'Earny',

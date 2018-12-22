@@ -30,8 +30,8 @@
 }
 
 .Projects {
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 90%;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -56,6 +56,12 @@
 }
 
 @media (max-width: 500px) {
+  .Projects {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .Project {
     padding: 5px;
   }
