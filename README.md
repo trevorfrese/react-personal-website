@@ -1,4 +1,5 @@
-This is my personal website, built using React.
+This is my personal website, built using React. Finished product:
+https://www.trevorfrese.com
 
 I tend to use my personal website as a way to experiment using different front end techniques.
 
