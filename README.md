@@ -9,6 +9,7 @@ This stack is incredibly simple, it's React + Firebase Hosting.
 
 # Deploying
 `$ npm run build`
+
 `$ firebase deploy`
 
 ##  If deploy fails
