@@ -1,3 +1,5 @@
+How to Deploy
+`$ firebase deploy`
 
-Deploy
-$ firebase deploy
+If deploy fails
+`$ firebase deploy --debug`
