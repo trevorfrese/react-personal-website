@@ -54,8 +54,8 @@ class work extends Component {
         company: 'Square',
         companyUrl: 'https://squareup.com',
         position: 'Full Stack Engineer',
-        what: `Square empowers businesses`,
-        description: `Square provides businesses a suite of tools to manage Point of Sale,
+        what: `Square is building the future of commerce`,
+        description: `Square provides businesses a suite of tools to manage Payments,
         Payroll, Inventory, Appointments, Marketing and so much more. I work on a division in
         Square that empowers Square Sellers with a fully fledged CRM system.`
       },
