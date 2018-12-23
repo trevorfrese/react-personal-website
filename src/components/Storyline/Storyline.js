@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
-import Panel from './Panel/Panel';
 import Panel2 from './Panel2/Panel';
 import Panel3 from './Panel3/Panel';
 import Panel4 from './Panel4/Panel';
-import Panel5 from './Panel5/Panel';
 import Panel6 from './Panel6/Panel';
 import Panel7 from './Panel7/Panel';
 import Panel8 from './Panel8/Panel';
@@ -55,10 +53,8 @@ class storyline extends Component {
       <div className={classes.Storyline}>
         {back}
         <Panel3/>
-        {/* <Panel/> */}
         <Panel2/>
         <Panel4/>
-        {/* <Panel5/> */}
         <Panel8/>
         <Panel6/>
         <Panel7/>
