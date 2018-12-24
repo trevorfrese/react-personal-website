@@ -30,7 +30,7 @@
 }
 
 .Projects {
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
   display: flex;
   flex-flow: row wrap;

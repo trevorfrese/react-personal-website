@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ben from '../../assets/images/ben.jpg';
 import richard from '../../assets/images/richard.jpg';
-import elon from '../../assets/images/elon.png';
+// import elon from '../../assets/images/elon.png';
 import tim from '../../assets/images/tim.png';
 import evelyn from '../../assets/images/evelyn.jpg';
 import claudia from '../../assets/images/claudia.jpg';
@@ -58,34 +58,34 @@ class mentors extends Component {
         url: 'https://en.wikipedia.org/wiki/Richard_Feynman',
         job: 'Physicist',
         bio: `Feynman was a hilarious physicist. His ability to explain
-        dense theoretical concepts in layman terms is something to aspire to.`
+        theoretical concepts in a simple manner is something to aspire to.`
       },
-      {
-        image: elon,
-        name: 'Elon Musk',
-        url: 'https://en.wikipedia.org/wiki/Elon_musk',
-        job: 'Visionary',
-        bio: `Elon Musk is the single greatest visionary in our time.
-        He repeatedly does the impossible, and has built companies
-        around solving the world's most pressing problems.`
-      },
+      // {
+      //   image: elon,
+      //   name: 'Elon Musk',
+      //   url: 'https://en.wikipedia.org/wiki/Elon_musk',
+      //   job: 'Visionary',
+      //   bio: `Elon Musk is the single greatest visionary in our time.
+      //   He repeatedly does the impossible, and has built companies
+      //   around solving the world's most pressing problems.`
+      // },
       {
         image: tim,
         name: 'Tim Sherwood',
         url: 'https://www.cs.ucsb.edu/~sherwood/',
         job: 'UCSB CS Researcher and Lecturer',
         bio: `Tim was my teacher and advisor at UCSB. His advice has been
-        invaluable and his ability to teach dense CS topics while making the concepts
-        interesting and funny is something to aspire to.`
+        invaluable to my career. His Compilers class was a great example of
+        his ability to take a difficult idea and make it funny and accessible.`
       },
       {
         image: evelyn,
         name: 'Evelyn Reder',
         url: 'http://www.gss.ucsb.edu/people/evelyn-reder',
         job: 'UCSB German Lecturer',
-        bio: `I took German 1 with Evelyn, and then proceeded to take all of her classes, minored in German,
-        and studied abroad in Berlin because of her. She is
-        the absolute best teacher and makes learning fun and exciting.`
+        bio: `I took German 1 with Evelyn, and then proceeded to take all of her classes,
+        minored in German, and studied abroad in Berlin because of her. She is
+        the best teacher I've ever had, and an absolute joy of a human being.`
       },
       {
         image: claudia,
