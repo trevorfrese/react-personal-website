@@ -1,5 +1,13 @@
 .HomePage {
-  background-color: #EE6055;
+  position: relative;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  flex-direction: column;
+  display: flex;
+}
+
+.CanvasOverlay {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -93,6 +101,6 @@
     padding-top: 100px;
   }
   .HomePage {
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
   }
 }

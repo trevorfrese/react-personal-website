@@ -1,0 +1,74 @@
+.Neon {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-10vh);
+}
+
+.Lines {
+
+}
+
+.Welcome {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 100px;
+}
+
+.ScrollBounce {
+  position: absolute;
+  bottom: 10px;
+  -webkit-text-stroke: 2.5px #00FFFF;
+}
+
+.Name {
+  color: black;
+  margin: auto 0;
+  font-size: 3em;
+  font-family: Roboto, sans-serif;
+  -webkit-text-stroke: 2.5px #00FFFF;
+}
+
+
+.Path {
+  fill:none;
+  stroke: #00FFFF;
+  stroke-width: 4;
+}
+
+.Bounce {
+  color: black;
+  text-align: center;
+  margin: 0;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+  animation-delay: 3.25s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 450px) {
+  .Name {
+    font-size: 2em;
+  }
+}
