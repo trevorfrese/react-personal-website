@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import anime from 'animejs/lib/anime.es.js';
+import mainImage from '../../assets/images/waterfall.jpg';
+import CanvasOverlay from '../CanvasOverlay/CanvasOverlay';
 
 import classes from './Fireworks.css';
 
@@ -206,8 +208,8 @@ class Fireworks extends Component {
       if (human) return;
 
       var fakeClick = new Event("mousedown");
-      fakeClick.pageX = x;
-      fakeClick.pageY = y;
+      fakeClick.x = x;
+      fakeClick.y = y;
       fakeClick.isTriggered = true;
       document.dispatchEvent(fakeClick);
     }
@@ -218,6 +220,7 @@ class Fireworks extends Component {
     return (
       <div className={classes.Fireworks}>
         <canvas ref="canvas" className={classes.Canvas}/>
+        <CanvasOverlay/>
       </div>
     );
   }
