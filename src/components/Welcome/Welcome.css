@@ -27,7 +27,7 @@
 .ScrollBounce {
   position: absolute;
   bottom: 10px;
-  -webkit-text-stroke: 2.5px #00FFFF;
+  -webkit-text-stroke: 2px #FF60A0;
 }
 
 .Name {
@@ -35,7 +35,7 @@
   margin: auto 0;
   font-size: 3em;
   font-family: Roboto, sans-serif;
-  -webkit-text-stroke: 2.5px #00FFFF;
+  -webkit-text-stroke: 2px #dcff00;
 }
 
 
@@ -70,5 +70,9 @@
 @media (max-width: 450px) {
   .Name {
     font-size: 2em;
+  }
+
+  .Welcome {
+    height: calc(100vh - 110px);
   }
 }

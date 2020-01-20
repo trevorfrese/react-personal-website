@@ -50,10 +50,10 @@ class Fireworks extends Component {
     }
 
     function addClickListeners() {
-      document.addEventListener("touchstart", handleEvent);
       document.addEventListener("mousedown", handleEvent);
     };
 
+    // Note - I changed from using pageX and pageY to using x and y
     function handleEvent(e) {
         if (!e.isTriggered) {
           human = true;
@@ -65,13 +65,13 @@ class Fireworks extends Component {
         }
         var currentColor = colorPicker.current();
         var nextColor = colorPicker.next();
-        var targetR = calcPageFillRadius(e.pageX, e.pageY);
+        var targetR = calcPageFillRadius(e.x, e.y);
         var rippleSize = Math.min(200, (cW * .4));
         var minCoverDuration = 750;
 
         var pageFill = new Circle({
-          x: e.pageX,
-          y: e.pageY,
+          x: e.x,
+          y: e.y,
           r: 0,
           fill: nextColor
         });
@@ -87,8 +87,8 @@ class Fireworks extends Component {
         });
 
         var ripple = new Circle({
-          x: e.pageX,
-          y: e.pageY,
+          x: e.x,
+          y: e.y,
           r: 0,
           fill: currentColor,
           stroke: {
@@ -109,8 +109,8 @@ class Fireworks extends Component {
         var particles = [];
         for (var i=0; i<32; i++) {
           var particle = new Circle({
-            x: e.pageX,
-            y: e.pageY,
+            x: e.x,
+            y: e.y,
             fill: currentColor,
             r: anime.random(24, 48)
           })
@@ -198,7 +198,7 @@ class Fireworks extends Component {
       if (human) return;
 
       await sleep(3000);
-      fakeClick(anime.random( cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
+      fakeClick(anime.random(cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
       triggerFakeClicks();
     }
 
