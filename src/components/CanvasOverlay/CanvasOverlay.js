@@ -18,7 +18,7 @@ class CanvasOverlay extends Component {
     return (
       <div className={classes.CanvasOverlay}>
         <p className={classes.Greeting}>
-          I AM COLORFUL
+          I LOVE ART
         </p>
         <br/>
         <a className={classes.Greeting + ' ' + classes.Link}

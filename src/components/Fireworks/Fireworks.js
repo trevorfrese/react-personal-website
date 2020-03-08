@@ -188,7 +188,7 @@ class Fireworks extends Component {
     });
 
     var resizeCanvas = function() {
-      if (window.scrollY < window.innerHeight) {
+      if (!(window.innerWidth < 500 && window.scrollY >= window.innerHeight)) {
         cW = window.innerWidth;
         cH = window.innerHeight;
         canvasEl.width = cW;
