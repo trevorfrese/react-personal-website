@@ -21,7 +21,7 @@ class Fireworks extends Component {
 
     var cH;
     var cW;
-    var bgColor = "#ee6054";
+    var bgColor = "#000";
     var animations = [];
     var circles = [];
 
@@ -57,6 +57,16 @@ class Fireworks extends Component {
 
     // Note - I changed from using pageX and pageY to using x and y
     function handleEvent(e) {
+        // If click outside of Fireworks element
+        if (!e.isTriggered && !e.target.className.toString().includes('CanvasOverlay')) {
+          return;
+        }
+
+        // If click inside one of the links
+        if (!e.isTriggered && e.target.className.toString().includes('CanvasOverlay__Link')) {
+          return;
+        }
+
         if (!e.isTriggered) {
           human = true;
         }
@@ -178,10 +188,12 @@ class Fireworks extends Component {
     });
 
     var resizeCanvas = function() {
-      cW = window.innerWidth;
-      cH = window.innerHeight;
-      canvasEl.width = cW;
-      canvasEl.height = cH;
+      if (window.scrollY < window.innerHeight) {
+        cW = window.innerWidth;
+        cH = window.innerHeight;
+        canvasEl.width = cW;
+        canvasEl.height = cH;
+      }
     };
 
     (function init() {

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: black;
 }
 
 .ContactInfoBox {
@@ -14,10 +14,24 @@
   height: 80%;
   color: black;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  /* font-family: Roboto, sans-serif; */
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
   border-radius: 2px;
   z-index: 1;
+  max-height: 100%;
+  overflow-y: scroll;
+
+  text-align: center;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.Divider {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
 }
 
 .Info {
@@ -30,10 +44,51 @@
 }
 
 .Text {
-  text-align: center;
-  font-size: 2.5em;
+  text-align: left;
+  font-size: 2em;
   padding-top: 10px;
-  color: white;
+  /* color: white; */
+}
+
+.Description {
+  text-align: left;
+  font-size: 1.5em;
+  /* color: white; */
+}
+
+.ContactMethods {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.ContactMethod {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin: 5px 0;
+  flex-flow: column;
+  flex-direction: column;
+}
+
+.Logo {
+  font-size: 4em;
+}
+
+.Card {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 2px;
+  z-index: 1;
 }
 
 @media (max-width: 500px) {

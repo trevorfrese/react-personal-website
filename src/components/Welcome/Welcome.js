@@ -4,6 +4,11 @@ import anime from 'animejs/lib/anime.es.js';
 import classes from './Welcome.css';
 
 class Welcome extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+
   componentDidMount() {
     var lineDrawing = anime({
       targets: '.' + classes.Welcome + ' .' + classes.Lines + ' path',
@@ -14,6 +19,16 @@ class Welcome extends Component {
       direction: 'alternate',
       loop: true
     });
+  }
+
+  scrollDown = () => {
+    const allElements = document.getElementsByTagName("*");
+    for (let element of allElements) {
+      if (typeof(element.className) == 'string' && element.className.includes('Fireworks__Fireworks')) {
+        element.scrollIntoView({ behavior: "smooth" });
+        break;
+      }
+    }
   }
 
   render() {
@@ -37,7 +52,7 @@ class Welcome extends Component {
           </h1>
         </div>
 
-        <div className={classes.ScrollBounce}>
+        <div onClick={() => this.scrollDown()} className={classes.ScrollBounce}>
           <div className={classes.Bounce}>
             <div class="fa fa-chevron-down fa-2x"></div>
           </div>
