@@ -22,11 +22,6 @@ class CanvasOverlay extends Component {
         </p>
         <br/>
         <a className={classes.Greeting + ' ' + classes.Link}
-           href="https://www.youtube.com/channel/UC5574LWEAlmbfJBezvj828A"
-           target="_blank">
-          I REVIEW CONCERTS
-        </a>
-        <a className={classes.Greeting + ' ' + classes.Link}
            href="https://www.instagram.com/trevors_bookclub/"
            target="_blank">
           I REVIEW BOOKS
