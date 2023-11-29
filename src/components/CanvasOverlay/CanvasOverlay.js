@@ -16,13 +16,12 @@ class CanvasOverlay extends Component {
 	render() {
 		return (
 			<div className={classes.CanvasOverlay}>
-				<p className={classes.Greeting}>I LOVE ART</p>
 				<p className={classes.Greeting}>I LIVE IN AUSTIN</p>
-				<p className={classes.Greeting}>I BUILD THINGS</p>
 				<br />
 				<a
 					className={classes.Greeting + ' ' + classes.Link}
 					href="https://www.vaughtschocolate.com/"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					I MAKE CHOCOLATE
@@ -30,6 +29,7 @@ class CanvasOverlay extends Component {
 				<a
 					className={classes.Greeting + ' ' + classes.Link}
 					href="https://www.instagram.com/trevor_frese"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					I TAKE PHOTOS
@@ -37,6 +37,7 @@ class CanvasOverlay extends Component {
 				<a
 					className={classes.Greeting + ' ' + classes.Link}
 					href="https://www.linkedin.com/in/trevor-frese/"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					CONTACT ME
