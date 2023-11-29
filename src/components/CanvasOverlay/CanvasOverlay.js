@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import mainImage from '../../assets/images/waterfall.jpg';
 import classes from './CanvasOverlay.css';
 
 // <div className={classes.ImageContainer}>
-  // <img className={classes.MainImage} src={mainImage} alt="" />
+// <img className={classes.MainImage} src={mainImage} alt="" />
 // </div>
 
 // <div className={classes.ScrollBounce}>
@@ -14,31 +13,29 @@ import classes from './CanvasOverlay.css';
 // </div>
 
 class CanvasOverlay extends Component {
-  render() {
-    return (
-      <div className={classes.CanvasOverlay}>
-        <p className={classes.Greeting}>
-          I LOVE ART
-        </p>
-        <br/>
-        <a className={classes.Greeting + ' ' + classes.Link}
-           href="https://www.instagram.com/trevors_bookclub/"
-           target="_blank">
-          I REVIEW BOOKS
-        </a>
-        <a className={classes.Greeting + ' ' + classes.Link}
-           href="https://soundcloud.com/trevor-frese"
-           target="_blank">
-          I MAKE MUSIC
-        </a>
-        <a className={classes.Greeting + ' ' + classes.Link}
-           href="https://forms.gle/qELvnbtQes1UnJUt7"
-           target="_blank">
-          MY NEWSLETTER
-        </a>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className={classes.CanvasOverlay}>
+				<p className={classes.Greeting}>I LOVE ART</p>
+				<p className={classes.Greeting}>I LIVE IN AUSTIN</p>
+				<br />
+				<a
+					className={classes.Greeting + ' ' + classes.Link}
+					href="https://www.vaughtschocolate.com/"
+					target="_blank"
+				>
+					I MAKE CHOCOLATE
+				</a>
+				<a
+					className={classes.Greeting + ' ' + classes.Link}
+					href="https://www.linkedin.com/in/trevor-frese/"
+					target="_blank"
+				>
+					LINKEDIN
+				</a>
+			</div>
+		);
+	}
 }
 
 export default CanvasOverlay;

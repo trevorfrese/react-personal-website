@@ -1,18 +1,18 @@
 .Fireworks {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
-  cursor: pointer;
-  position: relative;
-  min-height: -webkit-fill-available;
+	background-color: #ee6055;
+	width: 100vw;
+	height: 100vh;
+	cursor: pointer;
+	position: relative;
+	min-height: -webkit-fill-available;
 }
 
 .Canvas {
-  position: absolute;
+	position: absolute;
 }
 
 @media (max-width: 450px) {
-  .Greeting {
-    font-size: 2em;
-  }
+	.Greeting {
+		font-size: 2em;
+	}
 }
