@@ -18,6 +18,7 @@ class CanvasOverlay extends Component {
 			<div className={classes.CanvasOverlay}>
 				<p className={classes.Greeting}>I LOVE ART</p>
 				<p className={classes.Greeting}>I LIVE IN AUSTIN</p>
+				<p className={classes.Greeting}>I BUILD THINGS</p>
 				<br />
 				<a
 					className={classes.Greeting + ' ' + classes.Link}
@@ -28,10 +29,17 @@ class CanvasOverlay extends Component {
 				</a>
 				<a
 					className={classes.Greeting + ' ' + classes.Link}
+					href="https://www.instagram.com/trevor_frese"
+					target="_blank"
+				>
+					I TAKE PHOTOS
+				</a>
+				<a
+					className={classes.Greeting + ' ' + classes.Link}
 					href="https://www.linkedin.com/in/trevor-frese/"
 					target="_blank"
 				>
-					LINKEDIN
+					CONTACT ME
 				</a>
 			</div>
 		);
