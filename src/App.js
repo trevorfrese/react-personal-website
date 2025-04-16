@@ -14,11 +14,6 @@ class App extends Component {
 			<div className="App">
 				<Switch>
 					<Route
-						exact
-						path="/work"
-						component={Work}
-					/>
-					<Route
 						path="/"
 						component={HomePage}
 					/>
